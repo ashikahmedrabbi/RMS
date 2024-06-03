@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Menu</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+
+    <section class="bg-base-300">
+      <div class="navbar container mx-auto px-10">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a href="index.html">Home</a></li>
+
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="reservation.html">Reservation</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">FoodHub</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a href="index.html" class="btn">Login</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- navbar end -->
+
+    <!-- menu stats -->
+    <!-- <section class="py-12 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h1 class="text-4xl font-bold mb-4">Our Menu</h1>
+          <p class="text-lg text-gray-600 container mx-auto px-4 text-center">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown thing took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            this is remaining essential.
+          </p>
+        </div>
+        <div class="flex justify-center space-x-16 mb-12">
+          <div>
+            <h1 class="text-2xl font-bold mb-4">POPULAR</h1>
+            <ul class="space-y-2">
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-arrow-right"></i><span>Americano Coffee</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-arrow-right"></i><span>Moccha Coffee</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-arrow-right"></i><span>Cold Coffee</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-arrow-right"></i><span>Black Coffee</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-arrow-right"></i><span>Hot Coffee</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 class="text-2xl font-bold mb-4">MOST SELL</h1>
+            <ul class="space-y-2">
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-arrow-right"></i><span>Espresso</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-arrow-right"></i><span>Cappuccino</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-arrow-right"></i><span>Macchiato</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-arrow-right"></i><span>Macchiato</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-arrow-right"></i><span>French Press</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 class="text-2xl font-bold mb-4">MUST TRY</h1>
+            <ul class="space-y-2">
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-arrow-right"></i><span>Vanilla Latte</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-arrow-right"></i><span>Cappuccino Coffee</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-arrow-right"></i><span>Irish Coffee</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-arrow-right"></i><span>Turkish Coffee</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-arrow-right"></i><span>Cold Brew</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex justify-center items-center space-x-4">
+          <img
+            class="rounded"
+            src="https://img.freepik.com/premium-photo/espresso-glass-table_632638-1701.jpg?w=360"
+            alt="Espresso"
+            width="250"
+            height="400"
+          />
+          <div class="flex flex-col space-y-4">
+            <img
+              class="rounded"
+              src="https://img.freepik.com/premium-photo/international-coffee-day-delicious-coffee-beautiful-latte-decoration-business-afternoon-tea-drinks_916211-202140.jpg?w=740"
+              alt="Latte"
+              width="200"
+              height="193"
+            />
+            <img
+              class="rounded"
+              src="https://img.freepik.com/premium-photo/international-coffee-day-delicious-coffee-beautiful-latte-decoration-business-afternoon-tea-drinks_912113-230598.jpg?w=740"
+              alt="Latte"
+              width="200"
+              height="191"
+            />
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- menu ends -->
+  </body>
+</html>
